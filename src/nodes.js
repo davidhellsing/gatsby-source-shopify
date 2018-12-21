@@ -92,7 +92,7 @@ export const CollectionNode = imageArgs =>
         },
         imageArgs,
       )
-    node.foo___NODE = 'bar'
+    // node.foo___NODE = 'bar'
     return node
   })
 
