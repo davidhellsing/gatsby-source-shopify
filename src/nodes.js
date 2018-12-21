@@ -81,7 +81,7 @@ export const CollectionNode = imageArgs =>
   createNodeFactory(COLLECTION, async node => {
     if (node.products)
       node.products___NODE = node.products.edges.map(edge =>
-        generateNodeId(PRODUCT, edge.node.id),
+        Math.random().toString(),
       )
 
     if (node.image)
@@ -92,7 +92,6 @@ export const CollectionNode = imageArgs =>
         },
         imageArgs,
       )
-    // node.foo___NODE = 'bar'
     return node
   })
 
